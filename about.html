@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/about.css" />
+    <script defer src="js/index.js"></script>
+  </head>
+  <body id="dark">
+    <!-- nav-bar -->
+    <nav id="nav-bar">
+      <div class="profile">
+        <i class="fas fa-user-circle btn">
+          <span> profile </span>
+        </i>
+      </div>
+
+      <div class="sections">
+        <a href="./">
+          <i class="fas fa-home btn" data-section="home">
+            <span> home </span>
+          </i>
+        </a>
+        <a href="./courses">
+          <i class="fas fa-video btn" data-section="courses">
+            <span> courses </span>
+          </i>
+        </a>
+        <a href="./customer">
+          <i class="fas fa-users btn" data-section="customer-reviews">
+            <span>customer reviews </span>
+          </i>
+        </a>
+        <a href="./settings">
+          <i class="fas fa-cog btn" data-section="settings">
+            <span>settings</span>
+          </i>
+        </a>
+        <a href="./about">
+          <i class="fas fa-question btn ac" data-section="about">
+            <span> about </span>
+          </i>
+        </a>
+      </div>
+
+      <button class="dark-light btn">
+        <i class="fas fa-moon moon"> </i>
+        <i class="fas fa-sun sun"> </i>
+        <span> color mode </span>
+      </button>
+    </nav>
+
+    <!-- settings -->
+    <section id="about">
+      <h2 class="main-title">about</h2>
+      <div class="container">
+        <p>created by Yousif Ghazi</p>
+        <div class="icons">
+          <a href="https://github.com/YousifGhazi" target="_blank"
+            ><i class="fab fa-github github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/yousif-ghazi-207107258/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in linkedin"></i
+          ></a>
+          <a href="mailto:yousif.oday.ghazi@gmail.com"
+            ><i class="fas fa-envelope email"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+#settings .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#settings .container .sec {
+  justify-content: space-between;
+  width: 80%;
+}
+#settings .container .sec .type {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  color: var(--p-clr);
+}
+
+#settings .container .sec .setting {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 1.8rem;
+  padding: 1.5rem;
+  background-color: var(--card-clr);
+  border-radius: 5px;
+}
+
+#settings .container .sec .setting .name {
+  font-size: 2rem;
+}
+
+#settings .container .sec .setting .val {
+  position: relative;
+  width: 4rem;
+  height: 1.8rem;
+  background: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 1000ms;
+}
+
+#settings .container .sec .setting .val .on-off {
+  position: absolute;
+  height: calc(100% + 2px);
+  width: 2rem;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #a7a7a7;
+  border-radius: 50%;
+  transition: 200ms;
+}
+#settings .container .sec .setting .val.on {
+  background: var(--main-gradient);
+}
+#settings .container .sec .setting .val.on .on-off {
+  left: 100%;
+  transform: translateX(-100%) translateY(-50%);
+}

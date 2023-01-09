@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/home.css" />
+    <script defer src="js/index.js"></script>
+  </head>
+  <body id="dark">
+    <!-- nav-bar -->
+    <nav id="nav-bar">
+      <div class="profile">
+        <i class="fas fa-user-circle btn">
+          <span> profile </span>
+        </i>
+      </div>
+
+      <div class="sections">
+        <a href="./">
+          <i class="fas fa-home btn ac" data-section="home">
+            <span> home </span>
+          </i>
+        </a>
+        <a href="./courses">
+          <i class="fas fa-video btn" data-section="courses">
+            <span> courses </span>
+          </i>
+        </a>
+        <a href="./customer">
+          <i class="fas fa-users btn" data-section="customer-reviews">
+            <span>customer reviews </span>
+          </i>
+        </a>
+        <a href="./settings">
+          <i class="fas fa-cog btn" data-section="settings">
+            <span>settings</span>
+          </i>
+        </a>
+        <a href="./about">
+          <i class="fas fa-question btn" data-section="about">
+            <span> about </span>
+          </i>
+        </a>
+      </div>
+
+      <button class="dark-light btn">
+        <i class="fas fa-moon moon"> </i>
+        <i class="fas fa-sun sun"> </i>
+        <span> color mode </span>
+      </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="home-text">
+        <h2>Home</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever since the 1500s, when an unknown printer took a galley of
+          type and scrambled it to make.
+        </p>
+        <a href="./courses">
+          <button>see courses</button>
+        </a>
+      </div>
+      <div class="home-img">
+        <!-- <img src="imgs/home/illustration-grow-together.svg" alt="" /> -->
+        <img src="imgs/home/illustration-grow-together.svg" alt="" />
+      </div>
+    </section>
+  </body>
+</html>

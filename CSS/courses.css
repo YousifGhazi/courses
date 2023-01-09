@@ -1,0 +1,107 @@
+/* courses */
+#courses .container .search {
+  position: relative;
+  margin: 5rem auto;
+  width: 80%;
+  background: linear-gradient(var(--search-input-clr), var(--search-input-clr))
+      padding-box,
+    var(--main-gradient) border-box;
+  border: 0.3rem solid transparent;
+  border-radius: 50px;
+}
+#courses .container .search i {
+  position: absolute;
+  font-size: 2rem;
+  color: var(--h-clr);
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+}
+#courses .container .search-input {
+  display: block;
+  width: 100%;
+  padding: 1.2rem 1rem;
+  font-size: 2rem;
+  color: var(--h-clr);
+  background-color: transparent;
+  border-radius: 50px;
+  border: none;
+  caret-color: white;
+}
+
+#courses .container .search-input::placeholder {
+  font-size: 2rem;
+  color: var(--h-clr);
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#courses .container .search-input:focus {
+  outline: none;
+}
+
+#courses .cards {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 500px));
+  justify-content: center;
+  row-gap: 8rem;
+  column-gap: 8rem;
+}
+
+#courses .cards .card {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--card-clr);
+  border-radius: 5px;
+}
+#courses .cards .card.hide {
+  display: none;
+}
+#courses .cards .card img {
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#courses .cards .card h4 {
+  font-size: 2.5rem;
+  margin: 1.8rem 0 1rem;
+}
+#courses .cards .card button {
+  width: 100%;
+  margin-top: 1.6rem;
+  padding: 1rem;
+  font-size: 2rem;
+  color: var(--h-clr);
+  background-color: #09c372;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #courses .container .cards .card img {
+    display: none;
+  }
+  #courses .container .search {
+    margin: 3rem auto;
+  }
+  #courses .container .search i {
+    right: 4%;
+  }
+}
+
+#courses .container .cards .not-found {
+  display: none;
+  position: absolute;
+  margin-top: 3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+}
+#courses .container .cards .not-found.show {
+  display: block;
+}

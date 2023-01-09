@@ -1,0 +1,42 @@
+#customer {
+  position: relative;
+}
+
+#customer .container .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  row-gap: 5rem;
+  column-gap: 5rem;
+}
+
+#customer .container {
+  position: relative;
+  margin-top: 6rem;
+}
+#customer .container .cards .card {
+  padding: 1.5rem;
+  background-color: var(--card-clr);
+  border-radius: 5px;
+}
+#customer .container .cards .card .user {
+  display: flex;
+  align-items: center;
+}
+#customer .container .cards .card .user .profile-img > i {
+  font-size: 4rem;
+}
+#customer .container .cards .card .user .info {
+  margin-left: 1rem;
+}
+#customer .container .cards .card .user .user-name {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+
+#customer .container .cards .card .user .email {
+  font-size: 1.2rem;
+  color: var(--p-clr);
+}
+#customer .container .cards .card .comment {
+  margin-top: 1rem;
+}

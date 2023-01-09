@@ -1,0 +1,41 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#about .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#about .container p {
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: bold;
+  font-size: 5.5rem;
+}
+
+#about .container .icons {
+  display: flex;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+#about .container .icons i {
+  font-size: 3rem;
+  transition: 100ms;
+  cursor: pointer;
+}
+
+#about .container .icons .linkedin:hover {
+  color: #144477;
+}
+#about .container .icons .email:hover {
+  color: #d73c30;
+}
+#about .container .icons .github:hover {
+  color: #d3d3d3;
+}

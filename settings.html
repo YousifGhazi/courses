@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/settings.css" />
+    <script defer src="js/index.js"></script>
+    <script defer src="js/settings.js"></script>
+  </head>
+  <body id="dark">
+    <!-- nav-bar -->
+    <nav id="nav-bar">
+      <div class="profile">
+        <i class="fas fa-user-circle btn">
+          <span> profile </span>
+        </i>
+      </div>
+
+      <div class="sections">
+        <a href="./">
+          <i class="fas fa-home btn" data-section="home">
+            <span> home </span>
+          </i>
+        </a>
+        <a href="./courses">
+          <i class="fas fa-video btn" data-section="courses">
+            <span> courses </span>
+          </i>
+        </a>
+        <a href="./customer">
+          <i class="fas fa-users btn" data-section="customer-reviews">
+            <span>customer reviews </span>
+          </i>
+        </a>
+        <a href="./settings">
+          <i class="fas fa-cog btn ac" data-section="settings">
+            <span>settings</span>
+          </i>
+        </a>
+        <a href="./about">
+          <i class="fas fa-question btn" data-section="about">
+            <span> about </span>
+          </i>
+        </a>
+      </div>
+
+      <button class="dark-light btn">
+        <i class="fas fa-moon moon"> </i>
+        <i class="fas fa-sun sun"> </i>
+        <span> color mode </span>
+      </button>
+    </nav>
+
+    <!-- settings -->
+    <section id="settings">
+      <h2 class="main-title">settings</h2>
+      <div class="container">
+        <span class="theme sec">
+          <span class="type">theme</span>
+          <div class="setting" data-name="dark-mode">
+            <h4 class="name">dark mode</h4>
+            <div class="val">
+              <span class="on-off"></span>
+            </div>
+          </div>
+        </span>
+        <span class="courses sec">
+          <span class="type">courses</span>
+          <div class="setting">
+            <h4 class="name">javascript only</h4>
+            <div class="val">
+              <span class="on-off"></span>
+            </div>
+          </div>
+          <div class="setting">
+            <h4 class="name">pyton only</h4>
+            <div class="val">
+              <span class="on-off"></span>
+            </div>
+          </div>
+          <div class="setting">
+            <h4 class="name">java only</h4>
+            <div class="val">
+              <span class="on-off"></span>
+            </div>
+          </div>
+          <div class="setting">
+            <h4 class="name">C++ only</h4>
+            <div class="val">
+              <span class="on-off"></span>
+            </div>
+          </div>
+          <div class="setting">
+            <h4 class="name">php only</h4>
+            <div class="val">
+              <span class="on-off"></span>
+            </div>
+          </div>
+        </span>
+        <span class="privicy sec">
+          <span class="type">privicy</span>
+          <div class="setting">
+            <h4 class="name">show email</h4>
+            <div class="val">
+              <span class="on-off"></span>
+            </div>
+          </div>
+          <div class="setting">
+            <h4 class="name">show username</h4>
+            <div class="val">
+              <span class="on-off"></span>
+            </div>
+          </div>
+          <div class="setting">
+            <h4 class="name">hide porflie pictar</h4>
+            <div class="val">
+              <span class="on-off"></span>
+            </div>
+          </div>
+          <div class="setting">
+            <h4 class="name">cookies</h4>
+            <div class="val">
+              <span class="on-off"></span>
+            </div>
+          </div>
+        </span>
+      </div>
+    </section>
+  </body>
+</html>
